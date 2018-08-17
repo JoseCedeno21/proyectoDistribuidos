@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Architects+Daughter|Bad+Script|Kaushan+Script|Luckiest+Guy|Modern+Antiqua');
+
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+
+.text-center{
+	text-align: center,
+}
+
+.padding-gifs{
+	padding: 10px;
+	text-align: center
+}
+
+.titulo{
+	padding-left: 40px;
+	font-size: 2.8vw;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+nav{
+	background-color: cadetblue,
+	color:white;
+
+}
+
+.textnavColor{
+	color: #a4f1f1;
+}
+a:hover{
+	color: #a8ffff;
+}
+
+.row{
+	margin-right: 0px;
+	margin-left: 0px
+}
+
+.navbar{
+	padding: 1rem 1rem 0rem 1rem;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/refresh.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
