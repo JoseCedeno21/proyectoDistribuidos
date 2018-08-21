@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+from datetime import date,timedelta
 sys.path.append('gen-py')
 
 from topgifs import topgifs
@@ -39,7 +40,8 @@ class topgifsHandler:
     return "actualizacion realizada"
 
   def getGifs(self):
-    key = "prueba10"
+    fecha = date.today()
+    key = str(fecha)
     if(conn.get(key)):
         imagenes = conn.get(key)
         return imagenes

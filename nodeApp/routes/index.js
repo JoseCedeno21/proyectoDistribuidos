@@ -24,11 +24,7 @@ router.get('/', function(req, res, next) {
 
 
 	client.getGifs(function(err, response){
-		//console.log(response);
 		res.render('index', { data: JSON.parse(response) });
-		//$(".loader").hide();
-		//var refresh = document.getElementById("refresh");
-		//close the connection once we're done
 	    connection.end();
 	})
   
@@ -36,7 +32,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/refrescar',function(req,res){
 
-	//console.log("hola");
   	var transport = thrift.TBufferedTransport;
 	var protocol = thrift.TBinaryProtocol;
 
